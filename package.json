@@ -1,0 +1,14 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "random anime character generator",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
