@@ -36,6 +36,7 @@ const bofuriArr = [
   174332, 174333, 179993, 176748, 181286, 176750, 176749, 176751, 180848,
   179059, 179994, 193248, 184449, 184448,
 ];
+const soulEaterArr = [8455, 8456, 8439, 11919, 8464];
 
 // all characters in one arr
 const idArr = [
@@ -49,6 +50,7 @@ const idArr = [
   ...promisedNeverlandArr,
   ...komiArr,
   ...bofuriArr,
+  ...soulEaterArr,
 ];
 
 const getImage = async function () {
