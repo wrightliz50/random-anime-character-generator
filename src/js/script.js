@@ -5,9 +5,9 @@
 
 // select document elements (button,image)
 const btn = document.querySelector(".btn--gen");
-const img = document.querySelector(".img--gen");
-const charNameEl = document.querySelector(".text--name");
-const titleEl = document.querySelector(".text--title");
+const img = document.querySelector(".card--img");
+const charNameEl = document.querySelector(".card--charName");
+const titleEl = document.querySelector(".card--animeTitle");
 const ytDiv = document.querySelector(".yt--help");
 const ytHref = document.querySelector(".a--yt");
 
@@ -71,11 +71,17 @@ const getImage = async function () {
       .then((data) => {
         //choose random image from character images and display image, name, and anime titleEl
         const charName = data.data.name;
-        const animeTitle =
-          data.data.anime[0].anime.title ===
+        let animeTitle = data.data.anime[0].anime.title;
+        // change title to name nephew knows
+        if (
+          animeTitle ===
           "Itai no wa Iya nanode Bougyoryoku ni Kyokufuri Shitai to Omoimasu."
-            ? "Bofuri"
-            : data.data.anime[0].anime.title;
+        ) {
+          animeTitle = "Bofuri";
+        }
+        if (animeTitle === "Komi-san wa, Comyushou desu.") {
+          animeTitle = "Komi Can't Communicate";
+        }
         img.src = `${data.data.images.jpg.image_url}`;
         img.alt = `Picture of ${charName}`;
         charNameEl.textContent = charName;

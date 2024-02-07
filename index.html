@@ -9,25 +9,27 @@
   </head>
   <body>
     <header>
-      <h1>Anime Drawing Ideas</h1>
+      <h1 class="header--title">Anime Drawing Ideas</h1>
     </header>
     <main>
-      <section>
-        <h2>Randomly pick an anime character to draw!</h2>
-        <button class="btn btn--gen">New Character</button>
+      <section class="section--gen">
+        <div class="text-btn--gen">
+          <h2 class="gen--text">Randomly pick an anime character to draw!</h2>
+          <button class="btn btn--gen">New Character</button>
+        </div>
         <div class="card">
-          <img class="img--gen" src="/src/img/mystery.jpeg" alt="Avatar" />
-          <div class="container">
-            <h4 class="text--name"><b>Mystery Character</b></h4>
-            <p class="text--title">Mystery Anime</p>
+          <img class="card--img" src="/src/img/mystery.jpeg" alt="Avatar" />
+          <div class="card--container">
+            <h4 class="card--charName"><b>Mystery Character</b></h4>
+            <p class="card--animeTitle">Mystery Anime</p>
           </div>
         </div>
         <div class="yt--help hidden">
-          <h2>Practice drawing this character with help from YouTube!</h2>
+          <h2 class="yt--text">
+            Practice drawing this character with help from YouTube!
+          </h2>
           <a class="a--yt" href="/" target="_blank">
-            <button class="btn btn--yt">
-              <span class="btn-text">Get Help on YT</span>
-            </button>
+            <button class="btn btn--yt">Watch Video</button>
           </a>
         </div>
       </section>
