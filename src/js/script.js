@@ -13,7 +13,7 @@ const ytHref = document.querySelector(".a--yt");
 
 // random number generator
 const randomNumberGenerator = function (length) {
-  return Math.trunc(Math.random() * lecngth);
+  return Math.trunc(Math.random() * length);
 };
 
 // Anime character nephew likes
