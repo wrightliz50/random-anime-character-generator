@@ -28,7 +28,7 @@ header {
 
 .header--title {
   position: absolute;
-  padding: auto;
+  padding: 1rem;
   width: 100%;
   background-color: inherit;
   font-size: 4vh;

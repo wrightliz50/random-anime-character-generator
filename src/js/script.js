@@ -13,7 +13,7 @@ const ytHref = document.querySelector(".a--yt");
 
 // random number generator
 const randomNumberGenerator = function (length) {
-  return Math.trunc(Math.random() * length);
+  return Math.trunc(Math.random() * lecngth);
 };
 
 // Anime character nephew likes
@@ -37,6 +37,9 @@ const bofuriArr = [
   179059, 179994, 193248, 184449, 184448,
 ];
 const soulEaterArr = [8455, 8456, 8439, 11919, 8464];
+const sevenDeadlySinsArr = [77605, 72921, 83801, 86683, 95977, 74653, 72923];
+const inuyashaArr = [1353, 1354, 1355, 1356, 1357];
+const sonicArr = [2882, 6379, 6377, 6378, 6672, 5507, 6380, 14739];
 
 // all characters in one arr
 const idArr = [
@@ -51,6 +54,9 @@ const idArr = [
   ...komiArr,
   ...bofuriArr,
   ...soulEaterArr,
+  ...sevenDeadlySinsArr,
+  ...inuyashaArr,
+  ...sonicArr,
 ];
 
 const getImage = async function () {
@@ -81,6 +87,12 @@ const getImage = async function () {
         }
         if (animeTitle === "Komi-san wa, Comyushou desu.") {
           animeTitle = "Komi Can't Communicate";
+        }
+        if (animeTitle === "Nanatsu no Taizai") {
+          animeTitle = "Seven Deadly Sins";
+        }
+        if (animeTitle === "Kimetsu no Yaiba") {
+          animeTitle = "Demon Slayer";
         }
         img.src = `${data.data.images.jpg.image_url}`;
         img.alt = `Picture of ${charName}`;
